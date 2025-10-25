@@ -13,7 +13,28 @@ A complete RESTful API built with Express.js for managing products with advanced
 - **📝 Logging** - Request logging middleware
 
 ## 🏗️ Project Structure
-
+      express-js-server-side-framework-DILHT/
+├── config/
+│   └── config.js              # Environment configuration
+├── server/
+│   ├── server.js              # Server entry point
+│   ├── express.js             # Express app configuration
+│   ├── controllers/
+│   │   └── product.controller.js  # Product business logic
+│   ├── routes/
+│   │   └── product.route.js   # Product routes
+│   ├── middlewares/
+│   │   ├── authenticate.middleware.js    # API key authentication
+│   │   ├── errorHandler.middleware.js    # Global error handling
+│   │   ├── logger.middleware.js          # Request logging
+│   │   └── validation.middleware.js      # Input validation
+│   └── models/
+│       └── product.model.js   # In-memory data store
+├── errors/
+│   └── customError.js         # Custom error classes
+├── .env                       # Environment variables
+├── .env.example               # Environment template
+└── package.json
 
 ## 🚀 Quick Start
 
@@ -325,4 +346,4 @@ This project is created for educational purposes as part of the MERN Stack curri
 
 ---
 
-**Built with ❤️ using Express.js**
+**Built with ❤️Daniel Kasambala using Express.js**
