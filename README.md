@@ -13,7 +13,8 @@ A complete RESTful API built with Express.js for managing products with advanced
 - **📝 Logging** - Request logging middleware
 
 ## 🏗️ Project Structure
-      express-js-server-side-framework-DILHT/
+```
+express-js-server-side-framework-DILHT/
 ├── config/
 │   └── config.js              # Environment configuration
 ├── server/
@@ -35,7 +36,7 @@ A complete RESTful API built with Express.js for managing products with advanced
 ├── .env                       # Environment variables
 ├── .env.example               # Environment template
 └── package.json
-
+```
 ## 🚀 Quick Start
 
 ### Prerequisites
