@@ -1,27 +1,23 @@
 // server.js - Starter Express server for Week 2 assignment
 
 // Import required modules
-const express = require('express');
-const bodyParser = require('body-parser');
 const app = require('./express');
 const config = require('../config/config');
 
 
 
-// Middleware setup
-app.use(bodyParser.json());
-
-
-
 // Root route
 app.get('/', (req, res) => {
-  res.send('Welcome to the Product API! Go to /api/products to see all products.');
+  // console.log(req.header)
+  res.send('Hello world! Welcome to my Express.js server.');
 });
 
-// TODO: Implement custom middleware for:
-// - Request logging
-// - Authentication
-// - Error handling
+// app.use("*",(req,res)=>{
+//   res.status(404).json({
+//     error:"Not Found",
+//     message:`The requested URL ${req.originalUrl} was not found on this server.`
+//   });
+// });
 
 // Start the server
 app.listen(config.port, () => {
